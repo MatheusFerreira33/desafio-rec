@@ -1,7 +1,7 @@
 # Desafio Node.js
 
 ## Requisitos:
-- Usar status codes REST.
+- Usar GRAPHQL.
 - Validar os dados de entrada.
 - Implementar JWT stateless.
 - Usar persistência de dados.
@@ -15,7 +15,7 @@
  - Criptografia irreversível (hash) para senha e token.
 
 ## Linguagens Desejadas:
- - BACKEND: Docker, NEST, TypeScript, JWT.
+ - BACKEND: Docker, NEST, TypeScript, JWT, GRAPHQL.
  - APP: ReactNative, Expo, TypeScript e Tailwind.
 
 ## Registro de usuário (Sign up)
