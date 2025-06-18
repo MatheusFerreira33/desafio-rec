@@ -9,6 +9,8 @@
 - Utilizar Docker para subir o backend.
 - Deployar API na nuvem (heroku, next, aws, google cloud, etc).
 - Publicar o código-fonte em um repositório na internet (Bitbucket ou Github).
+- ORM - Prisma.
+- Primordial - CODEGEN.
 
 ## Desejado:
  - Testes de unidade da API.
