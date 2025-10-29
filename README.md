@@ -22,6 +22,12 @@
  - WEB: React, Nextjs, TypeScript, Tailwind e Codegen.
  - APP: React Native, Expo, TypeScript, Tailwind e Codegen.
 
+## FIGMA:
+ - WEB/APP: Para criação do login seguir o FIGMA abaixo.
+ - https://www.figma.com/design/4KNi283SAEivoLkJ7S1NVH/Untitled?node-id=0-1&t=5uMaGmxGrNIv0BpR-1
+ - Tela de criação de usuário, seguir a proposta de layout do FIGMA de Login.
+ - Tela pós login, ter uma opção de listagem e pesquisa de usuários criados, com um botão de logout, seguindo a identidade visual proposta pelo FIGMA.
+
 ## Registro de usuário (Sign up)
 
 Este endpoint deve receber um objeto com o seguinte modelo:
@@ -71,7 +77,7 @@ Em caso de token inválido deve retornar 401 e uma mensagem de erro apropriada.
 Em caso de êxito retorna `email`, `id`, `telephones`, `created_at`, `modified_at`
 
 ## APLICATIVO
-Criar um aplicativo em ReactNative que realize a operação de login e na home traga os dados de usuário igual a um cartão de identificação (Utilize estilização da sua imaginação).
+Criar um aplicativo em ReactNative que realize a operação de login e na home traga os dados de usuário igual a um cartão de identificação (Utilize estilização da sua imaginação), ter a opção de listar usuários criados e buscar pelo nome do usuário.
 
 
 ## Boa sorte!
