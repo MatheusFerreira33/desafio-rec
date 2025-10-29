@@ -14,11 +14,13 @@
 
 ## Desejado:
  - Testes de unidade da API.
+ - Teste E2E.
  - Criptografia irreversível (hash) para senha e token.
 
 ## Linguagens Desejadas:
  - BACKEND: Docker, NEST, TypeScript, JWT, GRAPHQL.
- - APP: ReactNative, Expo, TypeScript e Tailwind.
+ - WEB: React, Nextjs, TypeScript, Tailwind e Codegen.
+ - APP: React Native, Expo, TypeScript, Tailwind e Codegen.
 
 ## Registro de usuário (Sign up)
 
