@@ -1,0 +1,47 @@
+type User {
+  id: ID!
+  name: String!
+  email: String!
+  password: String!
+  telephones: [Telephone!]!
+  created_at: String!
+  modified_at: String!
+}
+
+type Telephone {
+  number: String!
+  area_code: String!
+}
+
+type Query {
+  users: [User!]!
+  user(id: ID!): User
+  searchUsers(name: String!): [User!]!
+}
+
+type Mutation {
+  createUser(input: CreateUserInput!): User!
+  login(input: LoginInput!): AuthPayload!
+}
+
+input CreateUserInput {
+  name: String!
+  email: String!
+  password: String!
+  telephones: [TelephoneInput!]!
+}
+
+input TelephoneInput {
+  number: String!
+  area_code: String!
+}
+
+input LoginInput {
+  email: String!
+  password: String!
+}
+
+type AuthPayload {
+  token: String!
+  user: User!
+}
