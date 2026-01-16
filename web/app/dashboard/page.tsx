@@ -81,12 +81,10 @@ export default function DashboardPage() {
             </div>
           </div>
 
-          {/* Search Bar */}
           <div className="max-w-7xl mx-auto">
             <SearchBar onSearch={handleSearch} />
           </div>
 
-          {/* Users List */}
           <div className="max-w-7xl mx-auto">
             <div className="flex justify-between items-center mb-6">
               <h2 className="text-2xl font-bold text-gray-800">
@@ -127,7 +125,6 @@ export default function DashboardPage() {
             )}
           </div>
 
-          {/* Stats */}
           <div className="max-w-7xl mx-auto mt-12">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">

@@ -7,7 +7,6 @@ export default function HomePage() {
   const router = useRouter()
 
   useEffect(() => {
-    // Verificar se o usuário está logado
     const token = localStorage.getItem('token')
     if (token) {
       router.push('/dashboard')

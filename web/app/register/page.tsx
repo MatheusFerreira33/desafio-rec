@@ -86,17 +86,11 @@ export default function RegisterPage() {
   return (
     <>
       <div className="min-h-screen grid grid-cols-1 md:grid-cols-2">
-  
-  {/* LADO ESQUERDO - VISUAL */}
   <div className="hidden md:flex items-center justify-center bg-gradient-to-br from-purple-100 to-indigo-100">
-    {/* opcional: ilustração ou vazio */}
   </div>
 
-  {/* LADO DIREITO - FORM */}
   <div className="flex items-center justify-center px-6">
     <div className="w-full max-w-sm">
-
-      {/* Logo */}
       <div className="mb-8">
         <h1 className="text-2xl font-semibold text-gray-900">
           Nice to see you again
@@ -104,7 +98,6 @@ export default function RegisterPage() {
       </div>
 
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
-              {/* Nome */}
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   Nome Completo
@@ -121,8 +114,6 @@ export default function RegisterPage() {
                   <p className="mt-1 text-sm text-red-600">{errors.name.message}</p>
                 )}
               </div>
-
-              {/* Email */}
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   Email
@@ -139,8 +130,6 @@ export default function RegisterPage() {
                   <p className="mt-1 text-sm text-red-600">{errors.email.message}</p>
                 )}
               </div>
-
-              {/* Senha */}
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   Senha
@@ -157,8 +146,6 @@ export default function RegisterPage() {
                   <p className="mt-1 text-sm text-red-600">{errors.password.message}</p>
                 )}
               </div>
-
-              {/* Telefones */}
               <div>
                 <div className="flex justify-between items-center mb-2">
                   <label className="block text-sm font-medium text-gray-700">

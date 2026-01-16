@@ -21,9 +21,7 @@ export default function ProfilePage() {
     if (!token) {
       router.push('/login')
     } else {
-      // Extrair userId do token (você precisará decodificar o JWT)
-      // Por enquanto, vamos usar um ID fixo ou buscar de outra forma
-      setUserId('1') // Substituir pela lógica real de extração do ID
+      setUserId('1')
     }
   }, [router])
 
@@ -68,7 +66,6 @@ export default function ProfilePage() {
         <Toaster position="top-right" />
         <div className="min-h-screen bg-gradient-to-br from-indigo-50 to-purple-50 p-4">
           <div className="max-w-4xl mx-auto">
-            {/* Header */}
             <div className="flex justify-between items-center mb-8">
               <div>
                 <h1 className="text-3xl font-bold text-gray-800">Meu Perfil</h1>
@@ -90,15 +87,10 @@ export default function ProfilePage() {
               </div>
             </div>
 
-            {/* Profile Card */}
             {user && (
               <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-                {/* Banner */}
                 <div className="h-32 bg-gradient-to-r from-indigo-500 to-purple-600"></div>
-
-                {/* Profile Info */}
                 <div className="relative px-8 pb-8">
-                  {/* Avatar */}
                   <div className="absolute -top-16 left-8">
                     <div className="w-32 h-32 bg-gradient-to-r from-indigo-400 to-purple-500 rounded-full border-4 border-white flex items-center justify-center">
                       <span className="text-4xl font-bold text-white">
@@ -107,21 +99,18 @@ export default function ProfilePage() {
                     </div>
                   </div>
 
-                  {/* Edit Button */}
                   <div className="absolute top-4 right-8">
                     <button className="px-4 py-2 bg-white text-gray-700 rounded-lg border border-gray-300 hover:bg-gray-50 transition-colors duration-300">
                       Editar Perfil
                     </button>
                   </div>
 
-                  {/* User Info */}
                   <div className="pt-20">
                     <h2 className="text-2xl font-bold text-gray-800">{user.name}</h2>
                     <p className="text-gray-600 mt-1">{user.email}</p>
                     <p className="text-gray-500 mt-2 text-sm">ID: {user.id}</p>
                   </div>
 
-                  {/* Stats */}
                   <div className="grid grid-cols-3 gap-6 mt-8">
                     <div className="text-center p-4 bg-gray-50 rounded-lg">
                       <p className="text-sm text-gray-600">Membro desde</p>
@@ -141,7 +130,6 @@ export default function ProfilePage() {
                     </div>
                   </div>
 
-                  {/* Telephones */}
                   {user.telephones && user.telephones.length > 0 && (
                     <div className="mt-8">
                       <h3 className="text-xl font-bold text-gray-800 mb-4">Telefones</h3>
