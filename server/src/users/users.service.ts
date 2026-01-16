@@ -50,9 +50,6 @@ export class UsersService {
     return user;
   }
 
-  // No arquivo src/users/users.service.ts
-// Adicione este método após o findOne():
-
 async findByEmail(email: string) {
   const user = await this.prisma.user.findUnique({
     where: { email },
@@ -87,7 +84,7 @@ async findByEmail(email: string) {
   }
 
   async remove(id: string) {
-    await this.findOne(id); // Verifica se usuário existe
+    await this.findOne(id);
     
     return this.prisma.user.delete({
       where: { id },
