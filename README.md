@@ -1,66 +1,28 @@
-🚀 Desafio Full Stack – NestJS, GraphQL e Next.js
+# 🚀 Desafio Full Stack – NestJS, GraphQL e Next.js
 
-Este projeto foi desenvolvido como um desafio técnico full stack, com foco em boas práticas de arquitetura, segurança, padronização e deploy em nuvem.
+Este projeto foi desenvolvido como um **desafio técnico full stack**, com foco em boas práticas de arquitetura, segurança, padronização e deploy em nuvem.
+
+## 📌 Visão Geral
 
 A aplicação é composta por:
 
-Backend em NestJS utilizando GraphQL
+- **Backend** em NestJS utilizando GraphQL  
+- **Frontend Web** em Next.js  
+- **Banco de dados PostgreSQL**  
+- **Ambiente containerizado com Docker**  
+- **Deploy em nuvem utilizando Render**
 
-Frontend Web em Next.js
+---
 
-Banco de dados PostgreSQL
+## 🧱 Arquitetura do Projeto
 
-Ambiente containerizado com Docker
-
-Deploy em nuvem utilizando Render
-
-🧱 Arquitetura do Projeto
+```text
 /
 ├── server/        # Backend NestJS (GraphQL + Prisma)
 ├── web/           # Frontend Next.js
-├── docker-compose.yml (apenas para desenvolvimento local)
+├── docker-compose.yml  # Apenas para desenvolvimento local
 └── README.md
 
-
-Cada aplicação possui seu próprio Dockerfile e é deployada como um serviço independente no Render.
-
-🧠 Tecnologias Utilizadas
-Backend
-
-NestJS
-
-GraphQL
-
-Prisma ORM
-
-PostgreSQL
-
-JWT (stateless)
-
-Docker
-
-TypeScript
-
-GraphQL Code Generator
-
-ESLint
-
-Bcrypt (hash de senha)
-
-Frontend (Web)
-
-React
-
-Next.js
-
-TypeScript
-
-Tailwind CSS
-
-GraphQL Code Generator
-
-Infra / Deploy
-
-Docker
-
-Render (Web Services + PostgreSQL)
+## Links
+- Front End Web: https://desafio-rec-2.onrender.com/login
+- Back End: https://desafio-rec-1.onrender.com
